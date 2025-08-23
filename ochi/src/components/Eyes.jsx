@@ -7,12 +7,14 @@ function Eyes() {
         <div className='absolute flex gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
             <div className='flex items-center justify-center w-[10vw] h-[10vw] rounded-full bg-zinc-100'>
                 <div className='flex items-center justify-center w-2/3 h-2/3 rounded-full bg-zinc-900'>
-                 <div className='w-1/4 h-1/4 rounded-full bg-zinc-100'></div>
+                <div className='line w-full h-10  '><div className='w-10 h-10 rounded-full bg-zinc-100'></div>
                 </div>
+                 </div>
             </div>
              <div className='flex items-center justify-center w-[10vw] h-[10vw] rounded-full bg-zinc-100'>
                 <div className='flex items-center justify-center w-2/3 h-2/3 rounded-full bg-zinc-900'>
-                 <div className='w-1/4 h-1/4 rounded-full bg-zinc-100'></div>
+                <div className='line w-full h-10  '><div className='w-10 h-10 rounded-full bg-zinc-100'></div>
+                </div>
                 </div>
              </div>
         </div>
