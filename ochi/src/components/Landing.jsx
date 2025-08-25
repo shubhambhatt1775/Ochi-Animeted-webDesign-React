@@ -1,14 +1,18 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { FaLongArrowAltUp } from "react-icons/fa";
 
 function Landing() {
+  
   return (
-    <div className='w-full h-screen bg-zinc-900 pt-1'>
+    <div data-scroll data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1'>
           <div className='textstructure mt-52 px-20'>
             {["We create", "eye-opening","presentations"].map((item,index)=>{
                 return  <div className="masker">
                     <div className='w-fit flex items-center'>
-                        {index === 1 && (<div className='w-[8.6vw] h-[5.3vw] relative mt-12 mr-[1vw] -top-[0.7vw] bg-green-600 rounded-lg'></div> )}
+                        {index === 1 && (<motion.div initial={{width:0}} animate={{width: "9vw"}} transition={{ease: [0.76, 0, 0.24, 1],  duration: 1}} className='w-[8.6vw] h-[5.2vw] relative mt-12 mr-[1vw] -top-[0.7vw] '>
+                          <img className='rounded-lg object-cover' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAAuwIRWHYOtTjpvnPtXy7Pju3GJBESI-yPa7WDfZdBujT0tE" alt="" />
+                        </motion.div> )}
                      <h1 className="flex  items-center uppercase text-[7vw] leading-[6vw] tracking-tighter font-['Test Founders'] font-bold ">
                         {item}
                          </h1>
