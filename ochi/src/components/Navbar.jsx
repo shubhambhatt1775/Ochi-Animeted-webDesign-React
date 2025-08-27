@@ -65,7 +65,7 @@ function Navbar() {
       {/* Mobile Menu */}
       {open && (
         <div className="fixed top-[80px] left-0 w-full flex flex-col items-center gap-6 py-6 md:hidden 
-  bg-white/30 backdrop-blur-sm supports-[backdrop-filter]:backdrop-blur-[5px]">
+  bg-zinc-600 backdrop-blur-sm supports-[backdrop-filter]:backdrop-blur-[5px]">
 
 
           {navItems.map((item, index) => (
